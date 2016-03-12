@@ -22,7 +22,6 @@ class MassCopier:
                 print("Entering {}".format(os.path.basename(i_item)))
                 self.copy_dir(i_item)
             elif os.path.isfile(i_item):
-                print("Testing {}".format(i_item))
                 _ext = self.get_file_ext(i_item)
                 if _ext in self.filters:
                     print("Copying {}".format(os.path.basename(i_item)))
